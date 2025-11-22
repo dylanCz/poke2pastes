@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 10px;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+.poke-block {
+    width: 400px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.text {
+    text-wrap: wrap;
+    font-size: 14px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.sprite {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    display: block;
+    margin: auto;
+}
+
+/* --- Cards laid horizontally --- */
+.team-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+/* --- Each Pokémon card --- */
+.pokemon-card {
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 12px;
+    width: 160px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: sans-serif;
+}
+
+/* Sprite */
+.sprite {
+    width: 96px;
+    height: 96px;
+    image-rendering: pixelated;
+    margin-bottom: 8px;
+}
+
+/* Name + item */
+.poke-name {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.poke-item {
+    font-size: 0.9em;
+    color: #444;
+    margin-bottom: 6px;
+}
+
+/* Moves */
+.move-list {
+    text-align: left;
+    font-family: monospace;
+    padding-left: 16px;
+    margin-top: 8px;
+}

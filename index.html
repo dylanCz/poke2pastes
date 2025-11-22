@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Stateless Team Paste</title>
+        <script src="https://cdn.jsdelivr.net/npm/lz-string@1.4.4/libs/lz-string.min.js"></script>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div id="edit-mode">
+            <h1>Paste a Pokémon Team</h1>
+
+            <textarea
+                id="pastebox"
+                placeholder="Paste Showdown team here..."
+            ></textarea>
+
+            <br /><br />
+            <button id="share">Generate Link</button>
+        </div>
+
+        <div id="view-mode" style="display: none">
+            <div id="team-display" class="flex-container"></div>
+        </div>
+
+        <script src="data/moves.js"></script>
+        <script src="data/pokemon.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
